@@ -1,0 +1,141 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #111;
+  color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.slogan {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.filtros {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #1e1e1e;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.producto {
+  border: 1px solid #333;
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  width: 220px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.producto:hover {
+  transform: scale(1.03);
+  border-color: #d62828;
+}
+
+.producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.producto button,
+.carrito button {
+  background-color: #d62828;
+  border: none;
+  color: white;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+}
+
+.producto button:hover,
+.carrito button:hover {
+  opacity: 0.9;
+}
+
+.carrito {
+  margin-top: 30px;
+  padding: 15px;
+  background: #1e1e1e;
+  border-radius: 8px;
+  text-align: left;
+  display: inline-block;
+  min-width: 320px;
+  color: #f4f4f4;
+}
+
+.carrito button.vaciar {
+  background-color: #6c757d;
+}
+
+.carrito .finalizar {
+  background-color: #d62828;
+}
+
+.payment-area {
+  margin-top: 20px;
+  padding: 12px;
+  background: #1e1e1e;
+  border-radius: 8px;
+  display: none;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.sim-card-form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #111;
+  color: #fff;
+}
+
+.confirm-msg {
+  padding: 10px;
+  border-radius: 6px;
+  background: #d4edda;
+  border: 1px solid #155724;
+  color: #155724;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 40px;
+  color: #777;
+  font-size: 0.9rem;
+}
