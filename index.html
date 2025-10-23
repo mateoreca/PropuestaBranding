@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreetStyle by Juan Andrés</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🧥 StreetStyle by Juan Andrés</h1>
+    <p class="slogan">Moda urbana con identidad propia</p>
+  </header>
+
+  <div class="filtros">
+    <label for="filtro-categoria">Filtrar por categoría:</label>
+    <select id="filtro-categoria">
+      <option value="todas">Todas</option>
+      <option value="Hoodies">Hoodies</option>
+      <option value="Gorras">Gorras</option>
+      <option value="Busos oversize">Busos oversize</option>
+    </select>
+  </div>
+
+  <div id="productos" class="productos"></div>
+
+  <div class="carrito">
+    <h2>🛒 Carrito de Compras (0)</h2>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Total: <span id="total">COP 0</span></strong></p>
+    <button class="vaciar" onclick="vaciarCarrito()">🧼 Vaciar Carrito</button>
+    <button id="finalizar" class="finalizar">✅ Finalizar Compra</button>
+  </div>
+
+  <div id="payment-area" class="payment-area">
+    <h3>Métodos de Pago</h3>
+    <div id="paypal-button-container"></div>
+
+    <div class="sim-card-form">
+      <h4>Pagar con Tarjeta (Simulado)</h4>
+      <input type="text" placeholder="Número de Tarjeta">
+      <input type="text" placeholder="Nombre en la Tarjeta">
+      <input type="text" placeholder="Fecha de Expiración (MM/AA)">
+      <input type="text" placeholder="CVV">
+      <button onclick="simularPago()">💳 Pagar</button>
+    </div>
+
+    <div id="confirm-msg" class="confirm-msg" style="display:none;">
+      🎉 ¡Pago exitoso! Gracias por comprar en StreetStyle.
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 StreetStyle by Juan Andrés - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=COP"></script>
+  <script src="script.js"></script>
+</body>
+</html>
